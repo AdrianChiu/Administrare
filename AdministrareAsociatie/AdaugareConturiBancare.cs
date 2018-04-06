@@ -8,6 +8,7 @@ using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using AdministrareAsociatie.Connection;
 
 namespace AdministrareAsociatie
 {
@@ -16,6 +17,8 @@ namespace AdministrareAsociatie
         string denumire;
         string IBAN;
 
+        Entity entity = Entity.GetObject();
+        ContBancarCon contBancarCon = new ContBancarCon();
 
         public AdaugareConturiBancare()
         {
@@ -43,14 +46,16 @@ namespace AdministrareAsociatie
             denumire = textBox1.Text;
             IBAN = textBox2.Text;
 
-            string MyConString = "SERVER=localhost;" + "DATABASE=administraredb;" + "UID=root;" + "PASSWORD=1234;";
-            MySqlConnection connection = new MySqlConnection(MyConString);
-            MySqlCommand command = connection.CreateCommand();
-            MySqlDataReader Reader;
-            command.CommandText = "insert into ContBancar(denumire, iban) values('" + denumire + "','" + IBAN + "') ;";
-            connection.Open();
-            
-            Reader = command.ExecuteReader();
+            //contBancarCon.Insert(denumire, IBAN);
+
+            ConturiBancare cont = new ConturiBancare();
+            DataGridView data = cont.GetDataTable();
+
+            DataTable d = contBancarCon.Read();
+            data.DataSource = d;
+
+            cont.SetDataTable(data);
+
             /*
             while (Reader.Read())
             {
@@ -59,7 +64,8 @@ namespace AdministrareAsociatie
                     thisrow += Reader.GetValue(i).ToString() + ",";
                 Console.WriteLine(thisrow);
             }*/
-            connection.Close();
+
+            //entity.CloseConnection();
         }
     }
 }

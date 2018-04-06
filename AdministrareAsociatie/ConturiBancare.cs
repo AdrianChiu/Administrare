@@ -17,6 +17,16 @@ namespace AdministrareAsociatie
             InitializeComponent();
         }
 
+        public DataGridView GetDataTable()
+        {
+            return dataGridView1;
+        }
+
+        public void SetDataTable(DataGridView data)
+        {
+            dataGridView1 = data;
+        }
+
         private void IesireButton_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -34,8 +34,6 @@
             this.StergereButton = new System.Windows.Forms.Button();
             this.IesireButton = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Denumire = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ContIBAN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,26 +96,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Denumire,
-            this.ContIBAN});
             this.dataGridView1.Location = new System.Drawing.Point(13, 72);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(757, 370);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridView1_CellContentClick);
-            // 
-            // Denumire
-            // 
-            this.Denumire.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Denumire.HeaderText = "Denumire";
-            this.Denumire.Name = "Denumire";
-            // 
-            // ContIBAN
-            // 
-            this.ContIBAN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ContIBAN.HeaderText = "Cont IBAN";
-            this.ContIBAN.Name = "ContIBAN";
             // 
             // ConturiBancare
             // 
@@ -143,7 +126,5 @@
         private System.Windows.Forms.Button StergereButton;
         private System.Windows.Forms.Button IesireButton;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Denumire;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ContIBAN;
     }
 }
