@@ -50,13 +50,8 @@ namespace AdministrareAsociatie
         {
             ConturiBancare conturiBancare = new ConturiBancare();
 
-            NewMethod(conturiBancare);
-
-        }
-
-        private static void NewMethod(ConturiBancare conturiBancare)
-        {
             conturiBancare.Show();
+
         }
 
         private void fonduriSpecialeToolStripMenuItem_Click(object sender, EventArgs e)
