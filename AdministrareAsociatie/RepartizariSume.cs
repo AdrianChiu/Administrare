@@ -8,14 +8,14 @@ using System.Windows.Forms;
 
 namespace AdministrareAsociatie
 {
-    public partial class AdaugareApartament : Form
+    public partial class RepartizariSume : Form
     {
-        public AdaugareApartament()
+        public RepartizariSume()
         {
             InitializeComponent();
         }
 
-        private void RevocareButton_Click(object sender, EventArgs e)
+        private void IesireButton_Click(object sender, EventArgs e)
         {
             this.Close();
 
@@ -23,10 +23,9 @@ namespace AdministrareAsociatie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Scari scari = new Scari();
+            AdaugareRepartizarePeCriteriu a = new AdaugareRepartizarePeCriteriu();
 
-            scari.Show();
-
+            a.Show();
         }
     }
 }

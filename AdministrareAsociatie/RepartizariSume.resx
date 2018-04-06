@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="AdaugareButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="button1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAoaSURBVFhHvVd5VFT3FTataWl6aqqyDQwMAipiQIOgCCpI
+        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAoaSURBVFhHvVd5VFT3FTataWl6aqqyDQwMAipiQIOgCCpI
         gOASoogs4nKqx7TEeOIfLlGTiHVDBBWNkohK0KAiKDsOICD7gLKFPTCswyr75swwzNf7e4jGxJza9pze
         c76Zd968d7/7u/tMeUN5i/BHwnQCn2BAMI6KivIJCQnZTdfzCPoELcI0wtsE9s7/LEyJCoF39uzZbWVl
         ZUVdXV0jz549A4NMJoNUKuWuBwcHlY2NjQMpKSmpu3fv/ojeUSP84bmO/0qmElTPnTu3s7m5uYsRyeVy
@@ -170,7 +170,7 @@
   <data name="DeschidereButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAYASURBVFhH7ZZ7TFNnGMbPLm4zWzZviKiAiALaAgVaBFGc
+        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAYASURBVFhH7ZZ7TFNnGMbPLm4zWzZviKiAiALaAgVaBFGc
         KFumY9MpZMapi2aLc5p5iWYTjS5ewamoGwpOFEQFhXK1WEQZF1GslqsUykVAKHIHkVtb+uw9eCYiuunS
         /bP4JL+ctmnP8+v79Ws+5lVe5clE+Bq4RO0x9BD7GC6P9DHc/jRRvgYLuLfqP1E+hjsvHx3TnHrCpCXz
         7PiHBbEWKIjnoUBih4JLziiQuiEtVNge52eay31Ef8kOdzdL8DOpq0m2hvaOCD0KEXRFIqCYKHMB7n0M
@@ -202,7 +202,7 @@
   <data name="StergereButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsAAAA7AAWrWiQkAAAj1SURBVFhHpZcLWJRVGsene1pZqJDmJIKB4Y0uOIIpaLrP
+        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAj1SURBVFhHpZcLWJRVGsene1pZqJDmJIKB4Y0uOIIpaLrP
         jKKYkoaSrSiJisp6Q2VXgWZErlIQIKBiC7jeAQMdclApRFFBVIQUvHBRLoMgJENq8N//GYZ2abHHrfd5
         fs85c97ruXzn+0byJBISEmIW6+8/OT4gQJEgCA7uhgCF0McrlYpo2oYolWYG9z8ngT4+tvkqVXVj/HY0
         hH2J5ogo3I+KQUtMLHTb4jpg/350DJojo9AYHo5733yDfD+/apW3t60hzB+TjV5edt+7u9f/kpQM7EsD
@@ -243,10 +243,10 @@
         pgH86x2oUsnDAwPl0SQuNFS+87+IM4yH0yaMtknbt5sa3H9HJJJ/A/Be5oHUzRgXAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="Iesirebutton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="IesireButton.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAACw8AAAsPAZL5A6UAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfWBR0ULzfTrsNu
+        YQUAAAAJcEhZcwAACxEAAAsRAX9kX5EAAAAGYktHRAD/AP8A/6C9p5MAAAAHdElNRQfWBR0ULzfTrsNu
         AAABEElEQVQoU5WRMUsDQRCFD7S4IrWCP0MstLWwFCMKAa1Ey6BgkTIYSZEiphK00MJKsBBERDGihYXY
         WQYEf0K0uexxzn7ObGIgYpE8eMvw3gxvZzcCRmI43O0Z7cWYzyXlirLQo9WqmWc9/YF2fhx3XiS92Sc9
         WcM1FnD1edxRnvSyhDtdx3r6A1+FHNKsm4B/f0aqc0hlBt96DJpcl7EeRW9gNeZ7bxr/EmKRp0PkoRFq
@@ -254,13 +254,13 @@
         pSmtNpg3sLQ9WVKbpXO8TFKaItmKutQ6aOoNPOvIHzc8iX4AwqyhyUdx4AgAAAAASUVORK5CYII=
 </value>
   </data>
-  <metadata name="Tip.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="TipChelt.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="Denumire.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="CriteriuDeRepartizare.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <metadata name="CUICNP.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="Valoare.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
 </root>

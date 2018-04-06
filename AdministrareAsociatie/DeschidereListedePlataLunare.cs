@@ -12,6 +12,8 @@ namespace AdministrareAsociatie
     {
         DataTable data1, data2, data3, data4;
         Point deschidereInitialLocation;
+        
+
 
         public DeschidereListedePlataLunare()
         {
@@ -20,6 +22,10 @@ namespace AdministrareAsociatie
             deschidereInitialLocation = DeschidereButton.Location;
             RecalculeazaButton.Hide();
             RecapitulatieButton.Hide();
+            NCPenalizariApartamenteButton.Hide();
+            TiparireButton.Hide();
+
+
 
             SetData();
         }
@@ -59,8 +65,13 @@ namespace AdministrareAsociatie
             AdaugareButton.Show();
             StergereButton.Show();
             RepartizareButton.Show();
+            NCColectButton.Show();
+            NCRepartButton.Show();
             RecapitulatieButton.Hide();
             RecalculeazaButton.Hide();
+            NCPenalizariApartamenteButton.Hide();
+            TiparireButton.Hide();
+
 
             DeschidereButton.Show();
             DeschidereButton.Location = deschidereInitialLocation;
@@ -86,11 +97,20 @@ namespace AdministrareAsociatie
 
             RecapitulatieButton.Show();
             RecalculeazaButton.Show();
+            TiparireButton.Show();
+            TiparireButton.Location = NCColectButton.Location;
+
 
             AdaugareButton.Hide();
             StergereButton.Hide();
             RepartizareButton.Hide();
             DeschidereButton.Hide();
+            NCColectButton.Hide();
+            NCRepartButton.Hide();
+            NCPenalizariApartamenteButton.Hide();
+
+            
+
 
             
 
@@ -103,7 +123,8 @@ namespace AdministrareAsociatie
 
         private void AdaugareButton_Click(object sender, EventArgs e)
         {
-            
+            AdaugareCheltuialaCuAchizitii adaugareCheltuialaCuAchizitii = new AdaugareCheltuialaCuAchizitii();
+            adaugareCheltuialaCuAchizitii.Show();
         }
 
         private void DeschidereButton_Click(object sender, EventArgs e)
@@ -113,6 +134,8 @@ namespace AdministrareAsociatie
 
         private void RepartizareButton_Click(object sender, EventArgs e)
         {
+            RepartizariSume repartizariSume = new RepartizariSume();
+            repartizariSume.Show();
 
         }
 
@@ -122,6 +145,12 @@ namespace AdministrareAsociatie
         }
 
         private void DeschidereListedePlataLunare_Load(object sender, EventArgs e)
+        {
+
+        }
+
+       
+        private void ColectareCheltuielCuAchizitiiToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
         }
@@ -157,11 +186,14 @@ namespace AdministrareAsociatie
 
             RecapitulatieButton.Show();
             RecalculeazaButton.Show();
+            TiparireButton.Show();
 
             AdaugareButton.Hide();
             StergereButton.Hide();
             RepartizareButton.Hide();
             DeschidereButton.Hide();
+            NCColectButton.Hide();
+            NCRepartButton.Hide();
 
         }
 
@@ -186,12 +218,19 @@ namespace AdministrareAsociatie
             AdaugareButton.Hide();
             StergereButton.Hide();
             RepartizareButton.Hide();
+            NCColectButton.Hide();
+            NCRepartButton.Hide();
+            TiparireButton.Hide();
+
+
 
             RecalculeazaButton.Hide();
             RecapitulatieButton.Hide();
 
             DeschidereButton.Show();
             DeschidereButton.Location = AdaugareButton.Location;
+            NCPenalizariApartamenteButton.Show();
+            NCPenalizariApartamenteButton.Location = NCColectButton.Location;
 
             
 

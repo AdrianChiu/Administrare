@@ -50,6 +50,9 @@
             this.TabelDeIntretinereDetaliatButton = new System.Windows.Forms.Button();
             this.RecalculeazaButton = new System.Windows.Forms.Button();
             this.RecapitulatieButton = new System.Windows.Forms.Button();
+            this.NCPenalizariApartamenteButton = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.TiparireButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.ColectChelSiRepartDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
@@ -63,7 +66,7 @@
             // DateTimePicker2
             // 
             this.DateTimePicker2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DateTimePicker2.Location = new System.Drawing.Point(1054, 11);
+            this.DateTimePicker2.Location = new System.Drawing.Point(1053, 11);
             this.DateTimePicker2.Name = "DateTimePicker2";
             this.DateTimePicker2.Size = new System.Drawing.Size(145, 20);
             this.DateTimePicker2.TabIndex = 0;
@@ -72,7 +75,7 @@
             // DateTimePicker3
             // 
             this.DateTimePicker3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.DateTimePicker3.Location = new System.Drawing.Point(904, 11);
+            this.DateTimePicker3.Location = new System.Drawing.Point(903, 11);
             this.DateTimePicker3.Name = "DateTimePicker3";
             this.DateTimePicker3.Size = new System.Drawing.Size(145, 20);
             this.DateTimePicker3.TabIndex = 0;
@@ -185,7 +188,7 @@
             this.ColectChelSiRepartDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ColectChelSiRepartDataGridView.Location = new System.Drawing.Point(123, 110);
             this.ColectChelSiRepartDataGridView.Name = "ColectChelSiRepartDataGridView";
-            this.ColectChelSiRepartDataGridView.Size = new System.Drawing.Size(1078, 457);
+            this.ColectChelSiRepartDataGridView.Size = new System.Drawing.Size(1077, 484);
             this.ColectChelSiRepartDataGridView.TabIndex = 3;
             this.ColectChelSiRepartDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ColectChelSiRepartDataGridView_CellContentClick);
             // 
@@ -194,7 +197,7 @@
             this.ValidareButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ValidareButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ValidareButton.Image = ((System.Drawing.Image)(resources.GetObject("ValidareButton.Image")));
-            this.ValidareButton.Location = new System.Drawing.Point(12, 606);
+            this.ValidareButton.Location = new System.Drawing.Point(12, 645);
             this.ValidareButton.Name = "ValidareButton";
             this.ValidareButton.Size = new System.Drawing.Size(110, 23);
             this.ValidareButton.TabIndex = 4;
@@ -207,7 +210,7 @@
             this.DevalidareButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.DevalidareButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DevalidareButton.Image = ((System.Drawing.Image)(resources.GetObject("DevalidareButton.Image")));
-            this.DevalidareButton.Location = new System.Drawing.Point(128, 606);
+            this.DevalidareButton.Location = new System.Drawing.Point(128, 645);
             this.DevalidareButton.Name = "DevalidareButton";
             this.DevalidareButton.Size = new System.Drawing.Size(110, 23);
             this.DevalidareButton.TabIndex = 4;
@@ -220,7 +223,7 @@
             this.IesireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.IesireButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IesireButton.Image = ((System.Drawing.Image)(resources.GetObject("IesireButton.Image")));
-            this.IesireButton.Location = new System.Drawing.Point(1095, 606);
+            this.IesireButton.Location = new System.Drawing.Point(1094, 645);
             this.IesireButton.Name = "IesireButton";
             this.IesireButton.Size = new System.Drawing.Size(110, 23);
             this.IesireButton.TabIndex = 4;
@@ -233,22 +236,26 @@
             // 
             this.NCColectButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NCColectButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NCColectButton.Location = new System.Drawing.Point(128, 573);
+            this.NCColectButton.Image = ((System.Drawing.Image)(resources.GetObject("NCColectButton.Image")));
+            this.NCColectButton.Location = new System.Drawing.Point(128, 600);
             this.NCColectButton.Name = "NCColectButton";
-            this.NCColectButton.Size = new System.Drawing.Size(110, 23);
+            this.NCColectButton.Size = new System.Drawing.Size(123, 35);
             this.NCColectButton.TabIndex = 5;
             this.NCColectButton.Text = "NC colect";
+            this.NCColectButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.NCColectButton.UseVisualStyleBackColor = true;
             // 
             // NCRepartButton
             // 
             this.NCRepartButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.NCRepartButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NCRepartButton.Location = new System.Drawing.Point(244, 573);
+            this.NCRepartButton.Image = ((System.Drawing.Image)(resources.GetObject("NCRepartButton.Image")));
+            this.NCRepartButton.Location = new System.Drawing.Point(257, 600);
             this.NCRepartButton.Name = "NCRepartButton";
-            this.NCRepartButton.Size = new System.Drawing.Size(110, 23);
+            this.NCRepartButton.Size = new System.Drawing.Size(133, 35);
             this.NCRepartButton.TabIndex = 5;
             this.NCRepartButton.Text = "NC repart";
+            this.NCRepartButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.NCRepartButton.UseVisualStyleBackColor = true;
             // 
             // TotalLabel
@@ -256,7 +263,7 @@
             this.TotalLabel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.TotalLabel.AutoSize = true;
             this.TotalLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TotalLabel.Location = new System.Drawing.Point(396, 576);
+            this.TotalLabel.Location = new System.Drawing.Point(412, 597);
             this.TotalLabel.Name = "TotalLabel";
             this.TotalLabel.Size = new System.Drawing.Size(39, 16);
             this.TotalLabel.TabIndex = 6;
@@ -279,7 +286,7 @@
             this.RecalculeazaButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RecalculeazaButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecalculeazaButton.Image = ((System.Drawing.Image)(resources.GetObject("RecalculeazaButton.Image")));
-            this.RecalculeazaButton.Location = new System.Drawing.Point(923, 63);
+            this.RecalculeazaButton.Location = new System.Drawing.Point(922, 63);
             this.RecalculeazaButton.Name = "RecalculeazaButton";
             this.RecalculeazaButton.Size = new System.Drawing.Size(125, 39);
             this.RecalculeazaButton.TabIndex = 1;
@@ -293,7 +300,7 @@
             this.RecapitulatieButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.RecapitulatieButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RecapitulatieButton.Image = ((System.Drawing.Image)(resources.GetObject("RecapitulatieButton.Image")));
-            this.RecapitulatieButton.Location = new System.Drawing.Point(1054, 63);
+            this.RecapitulatieButton.Location = new System.Drawing.Point(1053, 63);
             this.RecapitulatieButton.Name = "RecapitulatieButton";
             this.RecapitulatieButton.Size = new System.Drawing.Size(147, 38);
             this.RecapitulatieButton.TabIndex = 1;
@@ -302,19 +309,61 @@
             this.RecapitulatieButton.UseVisualStyleBackColor = true;
             this.RecapitulatieButton.Click += new System.EventHandler(this.RepartizareButton_Click);
             // 
+            // NCPenalizariApartamenteButton
+            // 
+            this.NCPenalizariApartamenteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.NCPenalizariApartamenteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NCPenalizariApartamenteButton.Image = ((System.Drawing.Image)(resources.GetObject("NCPenalizariApartamenteButton.Image")));
+            this.NCPenalizariApartamenteButton.Location = new System.Drawing.Point(296, 642);
+            this.NCPenalizariApartamenteButton.Name = "NCPenalizariApartamenteButton";
+            this.NCPenalizariApartamenteButton.Size = new System.Drawing.Size(219, 35);
+            this.NCPenalizariApartamenteButton.TabIndex = 5;
+            this.NCPenalizariApartamenteButton.Text = "NC penalizari apartamente";
+            this.NCPenalizariApartamenteButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.NCPenalizariApartamenteButton.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(196, 201);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(105, 71);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Penalizari apartam";
+            this.button3.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.PenalizariApartamButton_Click);
+            // 
+            // TiparireButton
+            // 
+            this.TiparireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.TiparireButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TiparireButton.Image = ((System.Drawing.Image)(resources.GetObject("TiparireButton.Image")));
+            this.TiparireButton.Location = new System.Drawing.Point(521, 642);
+            this.TiparireButton.Name = "TiparireButton";
+            this.TiparireButton.Size = new System.Drawing.Size(133, 35);
+            this.TiparireButton.TabIndex = 5;
+            this.TiparireButton.Text = "Tiparire";
+            this.TiparireButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.TiparireButton.UseVisualStyleBackColor = true;
+            // 
             // DeschidereListedePlataLunare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1217, 641);
+            this.ClientSize = new System.Drawing.Size(1216, 680);
             this.Controls.Add(this.TabelDeIntretinereDetaliatButton);
             this.Controls.Add(this.TotalLabel);
+            this.Controls.Add(this.TiparireButton);
+            this.Controls.Add(this.NCPenalizariApartamenteButton);
             this.Controls.Add(this.NCRepartButton);
             this.Controls.Add(this.NCColectButton);
             this.Controls.Add(this.IesireButton);
             this.Controls.Add(this.DevalidareButton);
             this.Controls.Add(this.ValidareButton);
             this.Controls.Add(this.ColectChelSiRepartDataGridView);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.TabeldeIntretinereButton);
             this.Controls.Add(this.PenalizariApartamButton);
             this.Controls.Add(this.ColectCheltsiRepartButton);
@@ -361,5 +410,8 @@
         private System.Windows.Forms.Button TabelDeIntretinereDetaliatButton;
         private System.Windows.Forms.Button RecalculeazaButton;
         private System.Windows.Forms.Button RecapitulatieButton;
+        private System.Windows.Forms.Button NCPenalizariApartamenteButton;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button TiparireButton;
     }
 }

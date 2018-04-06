@@ -43,6 +43,7 @@
             this.SuprUtila = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CotaIndiviza = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NrPers = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ToateComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,7 +90,7 @@
             // 
             this.ListaApartamenteButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.ListaApartamenteButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ListaApartamenteButton.Location = new System.Drawing.Point(12, 531);
+            this.ListaApartamenteButton.Location = new System.Drawing.Point(12, 534);
             this.ListaApartamenteButton.Name = "ListaApartamenteButton";
             this.ListaApartamenteButton.Size = new System.Drawing.Size(190, 27);
             this.ListaApartamenteButton.TabIndex = 1;
@@ -101,7 +102,7 @@
             this.IesireButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.IesireButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.IesireButton.Image = ((System.Drawing.Image)(resources.GetObject("IesireButton.Image")));
-            this.IesireButton.Location = new System.Drawing.Point(817, 533);
+            this.IesireButton.Location = new System.Drawing.Point(832, 536);
             this.IesireButton.Name = "IesireButton";
             this.IesireButton.Size = new System.Drawing.Size(103, 23);
             this.IesireButton.TabIndex = 2;
@@ -127,7 +128,7 @@
             this.NrPers});
             this.dataGridView1.Location = new System.Drawing.Point(13, 65);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(907, 452);
+            this.dataGridView1.Size = new System.Drawing.Size(922, 455);
             this.dataGridView1.TabIndex = 3;
             // 
             // NR
@@ -171,11 +172,22 @@
             this.NrPers.HeaderText = "Nr. pers";
             this.NrPers.Name = "NrPers";
             // 
+            // ToateComboBox
+            // 
+            this.ToateComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ToateComboBox.FormattingEnabled = true;
+            this.ToateComboBox.Location = new System.Drawing.Point(814, 26);
+            this.ToateComboBox.Name = "ToateComboBox";
+            this.ToateComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ToateComboBox.TabIndex = 4;
+            this.ToateComboBox.Text = "- Toate -";
+            // 
             // Apartamente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(932, 568);
+            this.ClientSize = new System.Drawing.Size(947, 571);
+            this.Controls.Add(this.ToateComboBox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.IesireButton);
             this.Controls.Add(this.ListaApartamenteButton);
@@ -205,5 +217,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn SuprUtila;
         private System.Windows.Forms.DataGridViewTextBoxColumn CotaIndiviza;
         private System.Windows.Forms.DataGridViewTextBoxColumn NrPers;
+        private System.Windows.Forms.ComboBox ToateComboBox;
     }
 }

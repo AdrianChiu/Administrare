@@ -45,6 +45,7 @@
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.RevocareButton = new System.Windows.Forms.Button();
             this.OKButton = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -142,14 +143,14 @@
             // 
             this.textBox4.Location = new System.Drawing.Point(326, 108);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(107, 20);
             this.textBox4.TabIndex = 1;
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(326, 139);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.Size = new System.Drawing.Size(107, 20);
             this.textBox5.TabIndex = 1;
             // 
             // comboBox1
@@ -163,7 +164,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(326, 13);
+            this.comboBox2.Location = new System.Drawing.Point(300, 13);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(100, 21);
             this.comboBox2.TabIndex = 2;
@@ -193,11 +194,22 @@
             this.OKButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.OKButton.UseVisualStyleBackColor = true;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(407, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(26, 23);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "...";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AdaugareApartament
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(457, 237);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.OKButton);
             this.Controls.Add(this.RevocareButton);
             this.Controls.Add(this.comboBox2);
@@ -239,5 +251,6 @@
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Button RevocareButton;
         private System.Windows.Forms.Button OKButton;
+        private System.Windows.Forms.Button button1;
     }
 }

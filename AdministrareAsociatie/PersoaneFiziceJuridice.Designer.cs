@@ -37,6 +37,7 @@
             this.Tip = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Denumire = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CUICNP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FiltruTipPersoanaComboBox = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,7 +84,7 @@
             this.Iesirebutton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.Iesirebutton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Iesirebutton.Image = ((System.Drawing.Image)(resources.GetObject("Iesirebutton.Image")));
-            this.Iesirebutton.Location = new System.Drawing.Point(474, 412);
+            this.Iesirebutton.Location = new System.Drawing.Point(526, 412);
             this.Iesirebutton.Name = "Iesirebutton";
             this.Iesirebutton.Size = new System.Drawing.Size(75, 23);
             this.Iesirebutton.TabIndex = 1;
@@ -104,7 +105,7 @@
             this.CUICNP});
             this.dataGridView1.Location = new System.Drawing.Point(13, 64);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(536, 333);
+            this.dataGridView1.Size = new System.Drawing.Size(588, 333);
             this.dataGridView1.TabIndex = 2;
             // 
             // Tip
@@ -124,11 +125,31 @@
             this.CUICNP.HeaderText = "CUI/CNP";
             this.CUICNP.Name = "CUICNP";
             // 
+            // FiltruTipPersoanaComboBox
+            // 
+            this.FiltruTipPersoanaComboBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.FiltruTipPersoanaComboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            "Clienti",
+            "Creditori garantii",
+            "Creditori diversi",
+            "Debitori avansuri decontare",
+            "Debitori diversi",
+            "Furnizori ",
+            "Proprietari"});
+            this.FiltruTipPersoanaComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FiltruTipPersoanaComboBox.FormattingEnabled = true;
+            this.FiltruTipPersoanaComboBox.Location = new System.Drawing.Point(480, 33);
+            this.FiltruTipPersoanaComboBox.Name = "FiltruTipPersoanaComboBox";
+            this.FiltruTipPersoanaComboBox.Size = new System.Drawing.Size(121, 24);
+            this.FiltruTipPersoanaComboBox.TabIndex = 3;
+            this.FiltruTipPersoanaComboBox.Text = "Filtru: tip persoana";
+            // 
             // PersoaneFiziceJuridice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 447);
+            this.ClientSize = new System.Drawing.Size(613, 447);
+            this.Controls.Add(this.FiltruTipPersoanaComboBox);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Iesirebutton);
             this.Controls.Add(this.StergereButton);
@@ -151,5 +172,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Tip;
         private System.Windows.Forms.DataGridViewTextBoxColumn Denumire;
         private System.Windows.Forms.DataGridViewTextBoxColumn CUICNP;
+        private System.Windows.Forms.ComboBox FiltruTipPersoanaComboBox;
     }
 }

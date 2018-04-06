@@ -36,28 +36,30 @@
             this.OKButton = new System.Windows.Forms.Button();
             this.RevocareButton = new System.Windows.Forms.Button();
             this.TipPersLabel = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TipPersCcomboBox = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 67);
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(110, 70);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(309, 20);
+            this.textBox2.Size = new System.Drawing.Size(309, 22);
             this.textBox2.TabIndex = 7;
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 41);
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(110, 44);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(309, 20);
+            this.textBox1.Size = new System.Drawing.Size(309, 22);
             this.textBox1.TabIndex = 8;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(14, 70);
+            this.label2.Location = new System.Drawing.Point(16, 76);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 16);
             this.label2.TabIndex = 5;
@@ -67,7 +69,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 41);
+            this.label1.Location = new System.Drawing.Point(18, 47);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(66, 16);
             this.label1.TabIndex = 6;
@@ -108,20 +110,30 @@
             this.TipPersLabel.TabIndex = 6;
             this.TipPersLabel.Text = "Tip persoana";
             // 
-            // textBox3
+            // TipPersCcomboBox
             // 
-            this.textBox3.Location = new System.Drawing.Point(109, 14);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(309, 20);
-            this.textBox3.TabIndex = 8;
+            this.TipPersCcomboBox.AutoCompleteCustomSource.AddRange(new string[] {
+            "Proprietari",
+            "Furnizori",
+            "Clienti",
+            "Debitori avansuri decontare",
+            "Debitori diversi",
+            "Creditori garantii",
+            "Creditori diversi"});
+            this.TipPersCcomboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TipPersCcomboBox.FormattingEnabled = true;
+            this.TipPersCcomboBox.Location = new System.Drawing.Point(110, 15);
+            this.TipPersCcomboBox.Name = "TipPersCcomboBox";
+            this.TipPersCcomboBox.Size = new System.Drawing.Size(308, 24);
+            this.TipPersCcomboBox.TabIndex = 9;
             // 
             // AdaugarePersoaneFiziceJuridice
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(438, 159);
+            this.Controls.Add(this.TipPersCcomboBox);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.TipPersLabel);
             this.Controls.Add(this.label2);
@@ -144,6 +156,6 @@
         private System.Windows.Forms.Button OKButton;
         private System.Windows.Forms.Button RevocareButton;
         private System.Windows.Forms.Label TipPersLabel;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox TipPersCcomboBox;
     }
 }
