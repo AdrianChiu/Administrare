@@ -13,6 +13,7 @@ namespace AdministrareAsociatie
     {
         public ConturiBancare()
         {
+            //var topLeftHeaderCell = dataGridView1.TopLeftHeaderCell;
             InitializeComponent();
         }
 

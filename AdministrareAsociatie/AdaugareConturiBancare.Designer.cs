@@ -36,12 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.conturiBancareDataSet = new AdministrareAsociatie.ConturiBancareDataSet();
-            this.conturiBancareBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.conturiBancareTableAdapter = new AdministrareAsociatie.ConturiBancareDataSetTableAdapters.ConturiBancareTableAdapter();
-            this.tableAdapterManager = new AdministrareAsociatie.ConturiBancareDataSetTableAdapters.TableAdapterManager();
-            ((System.ComponentModel.ISupportInitialize)(this.conturiBancareDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conturiBancareBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // RevocareButton
@@ -103,28 +97,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(254, 20);
             this.textBox2.TabIndex = 2;
-            // 
-            // conturiBancareDataSet
-            // 
-            this.conturiBancareDataSet.DataSetName = "ConturiBancareDataSet";
-            this.conturiBancareDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // conturiBancareBindingSource
-            // 
-            this.conturiBancareBindingSource.DataMember = "ConturiBancare";
-            this.conturiBancareBindingSource.DataSource = this.conturiBancareDataSet;
-            // 
-            // conturiBancareTableAdapter
-            // 
-            this.conturiBancareTableAdapter.ClearBeforeFill = true;
-            // 
-            // tableAdapterManager
-            // 
-            this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager.ConturiBancareTableAdapter = this.conturiBancareTableAdapter;
-            //TO-DO
-            //this.tableAdapterManager.UpdateOrder = AdministrareAsociatie.ConturiBancareDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
+            //
             // AdaugareConturiBancare
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -139,8 +112,6 @@
             this.Name = "AdaugareConturiBancare";
             this.Text = "Adaugare Conturi Bancare";
             this.Load += new System.EventHandler(this.AdaugareConturiBancare_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.conturiBancareDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.conturiBancareBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,9 +125,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private ConturiBancareDataSet conturiBancareDataSet;
         private System.Windows.Forms.BindingSource conturiBancareBindingSource;
-        private ConturiBancareDataSetTableAdapters.ConturiBancareTableAdapter conturiBancareTableAdapter;
-        private ConturiBancareDataSetTableAdapters.TableAdapterManager tableAdapterManager;
     }
 }

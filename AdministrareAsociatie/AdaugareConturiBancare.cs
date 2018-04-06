@@ -7,14 +7,12 @@ using System.Text;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
 
 namespace AdministrareAsociatie
 {
     public partial class AdaugareConturiBancare : Form
-    {/*
-        private SqlConnection connection;
-        string connectionString;
-        */
+    {
         string denumire;
         string IBAN;
 
@@ -22,8 +20,6 @@ namespace AdministrareAsociatie
         public AdaugareConturiBancare()
         {
             InitializeComponent();
-
-            //connectionString = ConfigurationManager.ConnectionStrings["AdministrareAsociatie.Properties.Settings.ConturiBancareConnectionString"].ConnectionString;
         }
 
         private void RevocareButton_Click(object sender, EventArgs e)
@@ -33,17 +29,12 @@ namespace AdministrareAsociatie
         }
         
         private void conturiBancareBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {/*
-            this.Validate();
-            this.conturiBancareBindingSource.EndEdit();
-            this.tableAdapterManager.UpdateAll(this.conturiBancareDataSet);
-            */
+        {
+
         }
 
         private void AdaugareConturiBancare_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'conturiBancareDataSet.ConturiBancare' table. You can move, or remove it, as needed.
-           // this.conturiBancareTableAdapter.Fill(this.conturiBancareDataSet.ConturiBancare);
 
         }
 
@@ -51,25 +42,24 @@ namespace AdministrareAsociatie
         {
             denumire = textBox1.Text;
             IBAN = textBox2.Text;
-            String str = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\ady\\source\\repos\\AdministrareAsociatie\\AdministrareAsociatie\\DB\\ConturiBancare.mdf;Integrated Security=True;Connect Timeout=30";
-            String query = "INSERT INTO ContBancar (Denumire, IBAN) values ('" + denumire + "','" + IBAN + "')";
 
-            SqlConnection con = new SqlConnection(str);
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataReader dbr;
-
-            try
+            string MyConString = "SERVER=localhost;" + "DATABASE=administraredb;" + "UID=root;" + "PASSWORD=1234;";
+            MySqlConnection connection = new MySqlConnection(MyConString);
+            MySqlCommand command = connection.CreateCommand();
+            MySqlDataReader Reader;
+            command.CommandText = "insert into ContBancar(denumire, iban) values('" + denumire + "','" + IBAN + "') ;";
+            connection.Open();
+            
+            Reader = command.ExecuteReader();
+            /*
+            while (Reader.Read())
             {
-                con.Open();
-                dbr = cmd.ExecuteReader();
-                MessageBox.Show("saved");
-            }
-            catch (Exception es)
-            {
-                MessageBox.Show(es.Message);
-            }
+                string thisrow = "";
+                for (int i = 0; i < Reader.FieldCount; i++)
+                    thisrow += Reader.GetValue(i).ToString() + ",";
+                Console.WriteLine(thisrow);
+            }*/
+            connection.Close();
         }
-
-    
     }
 }
