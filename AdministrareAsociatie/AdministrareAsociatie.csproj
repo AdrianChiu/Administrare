@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A534045A-D45D-4314-9A73-73BAF1EBC495}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AdministrareAsociatie</RootNamespace>
+    <AssemblyName>AdministrareAsociatie</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdaugareApartament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareApartament.Designer.cs">
+      <DependentUpon>AdaugareApartament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugareConturiBancare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareConturiBancare.Designer.cs">
+      <DependentUpon>AdaugareConturiBancare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugareFondSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareFondSpecial.Designer.cs">
+      <DependentUpon>AdaugareFondSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugarePersoaneFiziceJuridice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugarePersoaneFiziceJuridice.Designer.cs">
+      <DependentUpon>AdaugarePersoaneFiziceJuridice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdaugareScara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdaugareScara.Designer.cs">
+      <DependentUpon>AdaugareScara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Adminstrare Asociatie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Adminstrare Asociatie.Designer.cs">
+      <DependentUpon>Adminstrare Asociatie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Apartamente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Apartamente.Designer.cs">
+      <DependentUpon>Apartamente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConturiBancare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConturiBancare.Designer.cs">
+      <DependentUpon>ConturiBancare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConturiBancareDataSet.cs" />
+    <Compile Include="ConturiBancareDataSetTableAdapters.cs" />
+    <Compile Include="DateGenerale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DateGenerale.Designer.cs">
+      <DependentUpon>DateGenerale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeschidereApartament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeschidereApartament.Designer.cs">
+      <DependentUpon>DeschidereApartament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeschidereConturiBancare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeschidereConturiBancare.Designer.cs">
+      <DependentUpon>DeschidereConturiBancare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeschidereFondSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeschidereFondSpecial.Designer.cs">
+      <DependentUpon>DeschidereFondSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeschidereListedePlataLunare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeschidereListedePlataLunare.Designer.cs">
+      <DependentUpon>DeschidereListedePlataLunare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeschiderePersoaneFiziceJuridice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeschiderePersoaneFiziceJuridice.Designer.cs">
+      <DependentUpon>DeschiderePersoaneFiziceJuridice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeschidereScara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeschidereScara.Designer.cs">
+      <DependentUpon>DeschidereScara.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FiseApartament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FiseApartament.Designer.cs">
+      <DependentUpon>FiseApartament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FonduriSpeciale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FonduriSpeciale.Designer.cs">
+      <DependentUpon>FonduriSpeciale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IncasariPlatiRegistruDeCasaBanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IncasariPlatiRegistruDeCasaBanca.Designer.cs">
+      <DependentUpon>IncasariPlatiRegistruDeCasaBanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListedePlataLunare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListedePlataLunare.Designer.cs">
+      <DependentUpon>ListedePlataLunare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OperatiiDiverse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OperatiiDiverse.Designer.cs">
+      <DependentUpon>OperatiiDiverse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersoaneFiziceJuridice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PersoaneFiziceJuridice.Designer.cs">
+      <DependentUpon>PersoaneFiziceJuridice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scari.Designer.cs">
+      <DependentUpon>Scari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SituatieFurnizoriClienti.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SituatieFurnizoriClienti.Designer.cs">
+      <DependentUpon>SituatieFurnizoriClienti.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StergereApartament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StergereApartament.Designer.cs">
+      <DependentUpon>StergereApartament.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StergereConturiBancare.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StergereConturiBancare.Designer.cs">
+      <DependentUpon>StergereConturiBancare.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StergereFondSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StergereFondSpecial.Designer.cs">
+      <DependentUpon>StergereFondSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StergerePersoaneFiziceJuridice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StergerePersoaneFiziceJuridice.Designer.cs">
+      <DependentUpon>StergerePersoaneFiziceJuridice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StergereScara.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StergereScara.Designer.cs">
+      <DependentUpon>StergereScara.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdaugareApartament.resx">
+      <DependentUpon>AdaugareApartament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugareConturiBancare.resx">
+      <DependentUpon>AdaugareConturiBancare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugareFondSpecial.resx">
+      <DependentUpon>AdaugareFondSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugarePersoaneFiziceJuridice.resx">
+      <DependentUpon>AdaugarePersoaneFiziceJuridice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdaugareScara.resx">
+      <DependentUpon>AdaugareScara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Adminstrare Asociatie.resx">
+      <DependentUpon>Adminstrare Asociatie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Apartamente.resx">
+      <DependentUpon>Apartamente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConturiBancare.resx">
+      <DependentUpon>ConturiBancare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DateGenerale.resx">
+      <DependentUpon>DateGenerale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeschidereApartament.resx">
+      <DependentUpon>DeschidereApartament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeschidereConturiBancare.resx">
+      <DependentUpon>DeschidereConturiBancare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeschidereFondSpecial.resx">
+      <DependentUpon>DeschidereFondSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeschidereListedePlataLunare.resx">
+      <DependentUpon>DeschidereListedePlataLunare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeschiderePersoaneFiziceJuridice.resx">
+      <DependentUpon>DeschiderePersoaneFiziceJuridice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeschidereScara.resx">
+      <DependentUpon>DeschidereScara.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FiseApartament.resx">
+      <DependentUpon>FiseApartament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FonduriSpeciale.resx">
+      <DependentUpon>FonduriSpeciale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IncasariPlatiRegistruDeCasaBanca.resx">
+      <DependentUpon>IncasariPlatiRegistruDeCasaBanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListedePlataLunare.resx">
+      <DependentUpon>ListedePlataLunare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OperatiiDiverse.resx">
+      <DependentUpon>OperatiiDiverse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PersoaneFiziceJuridice.resx">
+      <DependentUpon>PersoaneFiziceJuridice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Scari.resx">
+      <DependentUpon>Scari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SituatieFurnizoriClienti.resx">
+      <DependentUpon>SituatieFurnizoriClienti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StergereApartament.resx">
+      <DependentUpon>StergereApartament.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StergereConturiBancare.resx">
+      <DependentUpon>StergereConturiBancare.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StergereFondSpecial.resx">
+      <DependentUpon>StergereFondSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StergerePersoaneFiziceJuridice.resx">
+      <DependentUpon>StergerePersoaneFiziceJuridice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StergereScara.resx">
+      <DependentUpon>StergereScara.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
