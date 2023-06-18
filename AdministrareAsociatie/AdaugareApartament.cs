@@ -23,7 +23,7 @@ namespace AdministrareAsociatie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Scari scari = new Scari();
+            Scari borduri = new Scari();
 
             scari.Show();
 
